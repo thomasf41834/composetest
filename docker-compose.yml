@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  app_laravel:
+    build: .
+    tty: true   # attache un terminal
+    volumes:
+      - .:/projet
+
+  mariadb:
+    image: "mariadb"
+    environment:
+      MYSQL_ROOT_PASSWORD: password
