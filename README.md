@@ -1,6 +1,6 @@
-# initialisation
-`docker-compose build`
-`docker-compose up -d`
+# initialisation  
+`docker-compose build`  
+`docker-compose up -d`  
 On entre dans le container laravel  
 `docker-compose exec app_laravel /bin/bash`  
 

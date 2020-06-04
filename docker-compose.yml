@@ -1,4 +1,4 @@
-version: '3.8'
+version: '3.4'
 services:
   app_laravel:
     build: .
@@ -10,7 +10,5 @@ services:
     build: "./mariadb"
     environment:
       MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: dbtest
-    volumes: 
-      - ./mariadb/config:/etc/mysql/conf.d
+    volumes:
       - ./mariadb/datadir:/var/lib/mysql
