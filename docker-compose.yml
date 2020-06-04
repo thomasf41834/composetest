@@ -10,6 +10,7 @@ services:
     build: "./mariadb"
     environment:
       MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: dbtest
     volumes: 
       - ./mariadb/config:/etc/mysql/conf.d
       - ./mariadb/datadir:/var/lib/mysql
