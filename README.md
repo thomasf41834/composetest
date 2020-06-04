@@ -1,6 +1,8 @@
-# composetest
+# initialisation
+`docker-compose build`
+`docker-compose update -d`
 On entre dans le container laravel  
-`docker exec -it cont_exemple /bin/bash`  
+`docker-compose exec app_laravel /bin/bash`  
 
 # configuration de l'environnement 
 On se rend dans le dossier synchronisé avec notre projet en local puis dans notre application laravel  
