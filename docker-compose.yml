@@ -5,6 +5,9 @@ services:
     tty: true   # attache un terminal
     volumes:
       - .:/projet
+    networks:
+      static-network:
+        ipv4_address: 172.20.128.1
 
   mariadb:
     build: "./mariadb"
@@ -12,3 +15,11 @@ services:
       MYSQL_ROOT_PASSWORD: password
     volumes:
       - ./mariadb/datadir:/var/lib/mysql
+    networks:
+      static-network:
+        ipv4_address: 172.20.128.2
+networks:
+  static-network:
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
