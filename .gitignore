@@ -13,8 +13,8 @@
 /laravel_app/yarn-error.log
 
 # pour mariadb
-/mariad/datadir/aria_log.00000001
-/mariad/datadir/aria_log_control
-/mariad/datadir/ib_logfile0
-/mariad/datadir/ibdata1
-/mariad/datadir/ibtmp1
+/mariadb/datadir/aria_log.00000001
+/mariadb/datadir/aria_log_control
+/mariadb/datadir/ib_logfile0
+/mariadb/datadir/ibdata1
+/mariadb/datadir/ibtmp1
